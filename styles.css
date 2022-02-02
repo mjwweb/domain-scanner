@@ -1,0 +1,121 @@
+
+h2 {
+    color: rgba(255,255,255,.8);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+body {
+    /*background-image: url('img/bkg.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgba(0,0,0, .9);
+}
+
+.scan-wrap, .result-set-wrap {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 800px;
+    padding: 25px;
+    background-color: rgba(255,255,255, .08);
+    border-radius: 20px;
+}
+.result-set-wrap, .result-set-wrap h2 {
+    display: none;
+}
+.result-set-wrap {
+    margin-bottom: 25px;
+}
+.scan-type-button {
+    background: rgba(255,255,255, .1);
+    box-shadow: 2px 0 10px 3px rgba(0,0,0,.25);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 15px;
+}
+.selected-scan {
+    background: #1e90ff;
+}
+.keyword-input {
+    margin: 5px 0;
+}
+.keywords-wrap textarea, .domain-extension, .primary-keyword-input {
+    background: rgba(255,255,255, .1);
+    border-radius: 8px;
+    box-shadow: 2px 0 10px 3px rgba(0,0,0,.25);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+.domain-extension, .primary-keyword-input {
+    width: 200px !important;
+}
+.domain-extension option {
+    color: rgba(0,0,0, .8);
+}
+.submit-search {
+    display: block;
+    margin-top: 25px;
+}
+.keywords-wrap {
+    margin-top: 25px;
+}
+.scan-secondary-wrap {
+    margin-top: 25px;
+}
+.groups-input {
+    background: rgba(255,255,255, .1);
+    border-radius: 4px;
+    box-shadow: 2px 0 10px 3px rgba(0,0,0,.25);
+    border: none;
+    color: #fff;
+    padding: 6px 8px;
+}
+.submit-search {
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 15px;
+}
+.status {
+    /*display: none;*/
+}
+.status img {
+    width: 35px;
+}
+.status span {
+    color: #dedede;
+    font-size: 18px;
+}
+
+/* domain results */
+
+.domainRsltRow {
+    display: flex;
+    padding: 8px 10px;
+    background: rgba(255,255,255, .1);
+    margin-bottom: 6px;
+}
+.domain-result {
+    margin-bottom: 0;
+    color: #fff;
+}
+.purchDomainBtn {
+    margin-left: auto;
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    background: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+    .scan-wrap, .result-set-wrap {
+        width: 98%;
+    }
+}
